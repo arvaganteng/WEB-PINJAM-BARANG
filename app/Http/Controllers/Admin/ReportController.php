@@ -21,12 +21,13 @@ class ReportController extends Controller
         $endDate = $request->get('end_date', date('Y-m-t'));
         $status = $request->get('status', 'Semua');
         $type = $request->get('type', 'peminjaman');
+        $colorMode = $request->get('color_mode', 'color');
 
         $data = $this->getReportData($startDate, $endDate, $status);
         $borrowings = $data['borrowings'];
         $stats = $data['stats'];
 
-        return view('admin.reports.index', compact('borrowings', 'stats', 'startDate', 'endDate', 'status', 'type'));
+        return view('admin.reports.index', compact('borrowings', 'stats', 'startDate', 'endDate', 'status', 'type', 'colorMode'));
     }
 
     /**
@@ -39,6 +40,7 @@ class ReportController extends Controller
         $endDate = $request->get('end_date', date('Y-m-t'));
         $status = $request->get('status', 'Semua');
         $type = $request->get('type', 'peminjaman');
+        $colorMode = $request->get('color_mode', 'color');
 
         $data = $this->getReportData($startDate, $endDate, $status);
         $borrowings = $data['borrowings'];
@@ -67,7 +69,7 @@ class ReportController extends Controller
             }
         }
 
-        $html = view('admin.reports.pdf', compact('borrowings', 'stats', 'startDate', 'endDate', 'status', 'type', 'logoBase64'))->render();
+        $html = view('admin.reports.pdf', compact('borrowings', 'stats', 'startDate', 'endDate', 'status', 'type', 'logoBase64', 'colorMode'))->render();
 
         $options = new Options();
         $options->set('isRemoteEnabled', true);

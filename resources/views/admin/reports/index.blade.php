@@ -127,13 +127,22 @@
     <div class="page-subtitle">Rekapitulasi data transaksi peminjaman, pendapatan sewa, dan denda aset perusahaan</div>
   </div>
   <div class="page-actions" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-    <!-- Unduh PDF -->
-    <a href="{{ route('admin.reports.export', array_merge(request()->all(), ['format' => 'pdf', 'download' => '1'])) }}" 
+    <!-- Unduh PDF Berwarna -->
+    <a href="{{ route('admin.reports.export', array_merge(request()->all(), ['format' => 'pdf', 'download' => '1', 'color_mode' => 'color'])) }}" 
        target="_blank" 
        class="btn btn-sm"
        style="background: #DC2626; color: #ffffff; border-color: #DC2626; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; border-radius: 10px; padding: 8px 14px;">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-      Unduh PDF
+      🎨 PDF Berwarna
+    </a>
+
+    <!-- Unduh PDF Hitam Putih -->
+    <a href="{{ route('admin.reports.export', array_merge(request()->all(), ['format' => 'pdf', 'download' => '1', 'color_mode' => 'bw'])) }}" 
+       target="_blank" 
+       class="btn btn-sm"
+       style="background: #334155; color: #ffffff; border-color: #334155; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; border-radius: 10px; padding: 8px 14px;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      🖨️ PDF Hitam Putih
     </a>
 
     <!-- Export Excel -->
@@ -145,7 +154,7 @@
     </a>
 
     <!-- Preview / Cetak PDF Langsung -->
-    <a href="{{ route('admin.reports.export', array_merge(request()->all(), ['format' => 'pdf', 'download' => '0'])) }}" 
+    <a href="{{ route('admin.reports.export', array_merge(request()->all(), ['format' => 'pdf', 'download' => '0', 'color_mode' => request('color_mode', 'color')])) }}" 
        target="_blank" 
        class="btn btn-secondary btn-sm"
        style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; border-radius: 10px; padding: 8px 14px;">
@@ -176,6 +185,14 @@
         <option value="Dipinjam" {{ $status == 'Dipinjam' ? 'selected' : '' }}>Dipinjam</option>
         <option value="Selesai" {{ $status == 'Selesai' ? 'selected' : '' }}>Selesai</option>
         <option value="Ditolak" {{ $status == 'Ditolak' ? 'selected' : '' }}>Ditolak</option>
+      </select>
+    </div>
+
+    <div class="filter-field">
+      <label>Mode Warna PDF</label>
+      <select name="color_mode" style="width: 150px;">
+        <option value="color" {{ ($colorMode ?? 'color') == 'color' ? 'selected' : '' }}>🎨 Berwarna</option>
+        <option value="bw" {{ ($colorMode ?? '') == 'bw' ? 'selected' : '' }}>🖨️ Hitam Putih</option>
       </select>
     </div>
     

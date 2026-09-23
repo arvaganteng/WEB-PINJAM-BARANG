@@ -183,6 +183,79 @@
       width: 180px;
       display: inline-block;
     }
+
+    @if(isset($colorMode) && $colorMode === 'bw')
+    /* ==========================================================================
+       HITAM PUTIH (MONOCHROME / BLACK & WHITE) PRINT OPTIMIZED STYLES
+       ========================================================================== */
+    body {
+      color: #000000 !important;
+    }
+    .kop-table {
+      border-bottom: 2px solid #000000 !important;
+    }
+    .kop-title {
+      color: #000000 !important;
+    }
+    .kop-subtitle {
+      color: #333333 !important;
+    }
+    .kop-meta {
+      color: #444444 !important;
+    }
+    .doc-badge {
+      background: #ffffff !important;
+      border: 1px solid #000000 !important;
+      color: #000000 !important;
+    }
+    .info-table {
+      background: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+    .info-label {
+      color: #333333 !important;
+    }
+    .info-value {
+      color: #000000 !important;
+    }
+    .stats-table td {
+      background: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+    .stat-val {
+      color: #000000 !important;
+    }
+    .stat-lbl {
+      color: #333333 !important;
+    }
+    .data-table th {
+      background: #111111 !important;
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+    .data-table td {
+      border: 1px solid #555555 !important;
+      color: #000000 !important;
+    }
+    .data-table tr:nth-child(even) {
+      background: #f4f4f4 !important;
+    }
+    .badge {
+      background: #ffffff !important;
+      border: 1px solid #000000 !important;
+      color: #000000 !important;
+    }
+    tfoot tr {
+      background: #e5e5e5 !important;
+    }
+    tfoot td {
+      color: #000000 !important;
+    }
+    .kop-logo img {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+    @endif
   </style>
 </head>
 <body>

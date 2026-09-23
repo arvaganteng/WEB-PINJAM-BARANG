@@ -71,7 +71,7 @@ graph TD
 | Penyerahan Barang (*Release Item*) | ✅ Ya | ❌ Tidak |
 | Pengajuan Perpanjangan Durasi Pinjam | ❌ (Approve Only) | ✅ Ya |
 | Verifikasi Pengembalian & Perhitungan Denda Otomatis | ✅ Ya | ❌ Tidak |
-| Cetak Laporan PDF & Faktur Invoice Transaksi | ✅ Ya | ✅ Ya (Invoice Only) |
+| Cetak Laporan PDF (Mode Berwarna & Hitam Putih) | ✅ Ya | ✅ Ya (Invoice Only) |
 | System Activity Logs (Jejak Audit Traversal) | ✅ Ya | ❌ Tidak |
 
 ---
