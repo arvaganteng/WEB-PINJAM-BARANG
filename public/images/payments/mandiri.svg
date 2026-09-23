@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <rect width="160" height="50" rx="8" fill="#002D62"/>
+  <path d="M100 8 C120 2 145 10 155 20 C140 14 115 18 95 28 C110 20 135 24 150 32 C130 26 105 32 90 42 C105 32 130 36 145 42 L160 42 L160 8 Z" fill="#FFC72C"/>
+  <text x="50" y="32" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">mandırı</text>
+</svg>

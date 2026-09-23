@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <rect width="160" height="50" rx="8" fill="#118EEA"/>
+  <g transform="translate(18, 11)">
+    <rect width="28" height="28" rx="6" fill="#FFFFFF"/>
+    <path d="M14 6 L17 12 L23 13 L19 17 L20 23 L14 20 L8 23 L9 17 L5 13 L11 12 Z" fill="#118EEA"/>
+  </g>
+  <text x="100" y="34" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">DANA</text>
+</svg>

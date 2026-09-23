@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <rect width="160" height="50" rx="8" fill="#005B9F"/>
+  <g fill="#FFFFFF" transform="translate(14, 10)">
+    <rect x="0" y="0" width="30" height="30" rx="4" fill="#FFFFFF"/>
+    <path d="M6 8 L18 8 C23 8 25 10 25 15 C25 20 22 22 17 22 L6 22 Z M11 12 L11 18 L16 18 C19 18 20 17 20 15 C20 13 19 12 16 12 Z" fill="#005B9F"/>
+    <path d="M8 6 L22 6 L14 24 Z" fill="#005B9F" opacity="0.3"/>
+  </g>
+  <text x="95" y="34" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="26" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">BCA</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <rect width="160" height="50" rx="8" fill="#ED1C24"/>
+  <text x="80" y="31" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="25" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">QRIS</text>
+  <text x="80" y="42" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="7" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">NATIONAL QR CODE STANDARD</text>
+</svg>
