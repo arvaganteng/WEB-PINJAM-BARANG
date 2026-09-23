@@ -1,171 +1,171 @@
 <p align="center">
   <a href="https://github.com/arvaganteng/WEB-PINJAM-BARANG">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Logo Pinjam Barang" width="320">
+    <img src="public/images/logo.png" alt="PT Nusantara Digital Express Logo" width="480">
   </a>
 </p>
 
-<h1 align="center">📦 Web Peminjaman Barang & Inventaris Enterprise</h1>
-
+<h1 align="center">🏢 Sistem Peminjaman Barang & Inventaris Enterprise</h1>
 <p align="center">
-  A modern, full-featured web application for managing inventory, item borrowing requests, returns, fines, and automated PDF reporting built with Laravel.
+  <strong>PT NUSANTARA DIGITAL EXPRESS</strong><br>
+  <em>Cepat • Aman • Terpercaya</em>
 </p>
 
 <p align="center">
-  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"></a>
-  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"></a>
-  <a href="https://mysql.com"><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License"></a>
+  Platform manajemen inventaris internal dan alur peminjaman aset perusahaan berbasis web yang modern, aman, dan efisien.
+</p>
+
+<p align="center">
+  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11"></a>
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2+"></a>
+  <a href="https://mysql.com"><img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/arvaganteng/WEB-PINJAM-BARANG/stargazers"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
 </p>
 
 ---
 
-## 📌 Tentang Aplikasi (About The Project)
+## 📌 Tentang Sistem (System Overview)
 
-**Web Peminjaman Barang & Inventaris** adalah platform manajemen aset dan peminjaman barang terintegrasi yang dirancang untuk mempermudah proses alur transaksi pengajuan peminjaman, verifikasi admin, pelacakan stok barang secara real-time, manajemen denda keterlambatan, hingga pengeluaran bukti invoice / laporan PDF secara otomatis.
-
-Aplikasi ini memiliki 2 hak akses utama (**Admin** & **Customer**) dengan fitur keamanan terkini seperti otentikasi OTP, audit trail (activity log), serta notifikasi terpusat.
+**Sistem Peminjaman Barang & Inventaris PT Nusantara Digital Express** adalah solusi enterprise terpadu yang dirancang untuk mengelola siklus peminjaman aset perusahaan (seperti perangkat elektronik, alat AV, operasional, dan furnitur kantor). Sistem ini membantu merapikan pencatatan stok, meminimalisir risiko kehilangan barang, serta menyediakan alur persetujuan transparan antara pengaju (Customer/Karyawan) dan Admin Inventaris.
 
 ---
 
 ## ✨ Fitur-Fitur Utama (Key Features)
 
-### 👨‍💼 Panel Admin
-- **Dashboard Analitik**: Ringkasan total barang, transaksi aktif, peminjaman pending, pengembalian, dan grafik statistik.
-- **Manajemen Katalog & Stok**: CRUD barang, kategori, status kondisi (Baik/Rusak), dan penetapan tarif sewa per hari.
-- **Persetujuan & Verifikasi Peminjaman**: Multi-stage approval (Approve, Reject, Confirm Payment, Release Item).
-- **Pengolahan Pengembalian & Denda**: Pengecekan kondisi barang saat dikembalikan, konfirmasi denda keterlambatan / kerusakan.
-- **Manajemen Pengguna (Customers)**: Kontrol akun pengguna, aktivasi/blokir status customer.
-- **Laporan & PDF Export**: Cetak laporan transaksi peminjaman dan rekapitulasi data aset.
-- **System Activity Logs**: Catatan riwayat aktivitas pengguna untuk transparansi & audit.
+### 👨‍💼 Panel Manajemen Admin
+- 📊 **Dashboard Analitik & Real-time Metrics**: Visualisasi total barang, transaksi aktif, pengajuan pending, dan statistik denda.
+- 📦 **Katalog & Manajemen Stok Aset**: Olah data barang (CRUD), penentuan kategori, kondisi fisik (Baik/Rusak), serta harga sewa harian.
+- 🛡️ **Alur Persetujuan Bertingkat (Multi-Stage Approval)**:
+  - Verifikasi pengajuan peminjaman (*Approve* / *Reject*).
+  - Konfirmasi pembayaran & pelepasan barang (*Release Item*).
+  - Persetujuan perpanjangan masa pinjam.
+- 🔄 **Verifikasi Pengembalian & Denda**: Pengecekan kelengkapan barang dan perhitungan denda otomatis untuk keterlambatan atau kerusakan.
+- 👥 **Manajemen Pengguna & Hak Akses**: Manajemen status akun pengguna (Aktif/Nonaktif) dan verifikasi profil.
+- 📄 **Cetak Laporan PDF & Rekapitulasi**: Ekspor rekap transaksi dan laporan aset siap cetak menggunakan DomPDF.
+- 📝 **System Activity Audit Logs**: Catatan riwayat aktivitas operasional untuk transparansi audit internal.
 
-### 👤 Panel Customer
-- **Katalog Barang & Pencarian**: Jelajahi barang berdasarkan kategori, ketersediaan stok, dan spesifikasi detail.
-- **Pengajuan Peminjaman Interaktif**: Pilih tanggal pinjam, estimasi pengembalian, hitung otomatis total biaya sewa, serta verifikasi OTP.
-- **Riwayat & Pelacakan Transaksi**: Pantau status pengajuan (Menunggu Approval, Dipinjam, Selesai, Ditolak).
-- **Pengajuan Perpanjangan Durasi**: Ajukan perpanjangan sewa barang langsung dari sistem.
-- **Invoice & Bukti PDF**: Download invoice transaksi dan tanda terima peminjaman fisik.
-- **Ulasan & Rating Barang**: Memberikan ulasan dan ulasan barang setelah pengembalian.
-- **Manajemen Profil & Keamanan**: Perbarui informasi akun dan kata sandi.
-
----
-
-## 🛠️ Teknologi yang Digunakan (Tech Stack)
-
-- **Framework**: [Laravel 11](https://laravel.com/)
-- **Bahasa Pemrograman**: PHP 8.2+
-- **Database**: MySQL / MariaDB
-- **Frontend**: Blade Templating Engine, Vanilla CSS & Modern Responsive Design
-- **Document Rendering**: DomPDF (`dompdf/dompdf`)
-- **Otentikasi**: Custom Role-based Middleware, Session-based Auth & OTP System
+### 👤 Panel Pengguna (Customer / Karyawan)
+- 🔍 **Katalog & Pencarian Barang Interaktif**: Eksplorasi barang berdasarkan kategori, stok tersedia, dan rincian spesifikasi.
+- 🛒 **Pengajuan Peminjaman & Otentikasi OTP**: Formulir pengajuan interaktif dengan kalkulasi otomatis total biaya dan verifikasi OTP demi keamanan.
+- 📋 **Pelacakan Status Real-Time**: Pemantauan status transaksi secara langsung (*Menunggu*, *Disetujui*, *Dipinjam*, *Selesai*).
+- ⏱️ **Pengajuan Perpanjangan Durasi**: Pengajuan perpanjangan waktu pinjam langsung dari dashboard pengguna.
+- 🧾 **Download Invoice & Bukti Pinjam PDF**: Pengunduhan faktur resmi transaksi dan bukti pengembalian.
+- ⭐ **Ulasan & Rating Barang**: Memberikan penilaian kondisi barang pasca-pengembalian.
+- 🔔 **Sistem Notifikasi Terpusat**: Pemberitahuan otomatis saat ada perubahan status peminjaman atau penagihan.
 
 ---
 
-## 📁 Struktur Direktori Utama (Project Structure)
+## 🛠️ Arsitektur & Teknologi (Tech Stack)
+
+| Komponen | Teknologi |
+| :--- | :--- |
+| **Backend Framework** | [Laravel 11](https://laravel.com/) (PHP 8.2+) |
+| **Database** | MySQL / MariaDB |
+| **Frontend UI** | Blade Templating, Responsive Vanilla CSS & JavaScript |
+| **PDF Generator** | DomPDF (`dompdf/dompdf`) |
+| **Otentikasi & Keamanan** | Custom Role Middleware, Session Auth & OTP Verification |
+| **Version Control** | Git & GitHub Repository |
+
+---
+
+## 📁 Struktur Direktori Project (Directory Structure)
 
 ```text
-pinjam-barang/
+WEB-PINJAM-BARANG/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/
-│   │   │   ├── Admin/          # Controller khusus Admin
-│   │   │   ├── Customer/       # Controller khusus Customer
-│   │   │   └── AuthController  # Autentikasi & OTP
-│   │   └── Middleware/         # Role-based middleware
-│   └── Models/                 # Eloquent Models (User, Item, Borrowing, ReturnRecord, dll)
+│   │   │   ├── Admin/          # Controller manajemen admin (Items, Borrowings, Reports, Fines)
+│   │   │   ├── Customer/       # Controller pengguna (Catalog, Borrowings, Profile)
+│   │   │   └── AuthController  # Otentikasi, Login, Register, & OTP
+│   │   └── Middleware/         # Middleware Role (Admin & Customer)
+│   └── Models/                 # Eloquent Models (User, Item, Category, Borrowing, ReturnRecord, ActivityLog)
 ├── database/
-│   ├── migrations/             # Struktur tabel database
-│   └── seeders/                # Data sampel awal
+│   ├── migrations/             # Skema dan struktur tabel database
+│   └── seeders/                # Seeder data awal (Admin, Customer, Kategori, Barang)
+├── public/
+│   ├── images/                 # Asset logo (logo.png) & gambar produk
+│   └── storage/                # Symlink direktori media
 ├── resources/
-│   └── views/
-│       ├── admin/              # Tampilan Dashboard Admin
-│       ├── customer/           # Tampilan Dashboard Customer
-│       └── auth/               # Halaman Login & Register
+│   └── views/                  # Blade templates (Admin, Customer, Auth, Email, Invoices)
 └── routes/
     └── web.php                 # Rute utama aplikasi
 ```
 
 ---
 
-## 🚀 Panduan Instalasi (Installation Guide)
+## 🚀 Panduan Instalasi & Jalankan (Getting Started)
 
-Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal Anda:
-
-### 1. Prasyarat System
-Pastikan komputer Anda sudah terinstal:
-- PHP >= 8.2
-- Composer
+### 1. Prasyarat Sistem
+- PHP `>= 8.2`
+- Composer `>= 2.x`
 - Node.js & NPM
-- Database Server (MySQL / Laragon / XAMPP)
+- Database Server (MySQL via Laragon / XAMPP)
 
-### 2. Clone Repository
+### 2. Langkah-Langkah Instalasi
+
 ```bash
+# 1. Clone repository
 git clone https://github.com/arvaganteng/WEB-PINJAM-BARANG.git
 cd WEB-PINJAM-BARANG
-```
 
-### 3. Install Dependensi PHP & Frontend
-```bash
+# 2. Install dependensi PHP & JavaScript
 composer install
 npm install
-```
 
-### 4. Konfigurasi Environment (`.env`)
-Salin file `.env.example` menjadi `.env`:
-```bash
+# 3. Konfigurasi Environment File
 cp .env.example .env
-```
-Buka file `.env` dan sesuaikan pengaturan database Anda:
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=pinjam_barang
-DB_USERNAME=root
-DB_PASSWORD=
-```
 
-### 5. Generate Application Key
-```bash
+# 4. Generate App Encryption Key
 php artisan key:generate
-```
 
-### 6. Jalankan Migrasi & Database Seeder
-Jalankan migrasi untuk membuat tabel beserta data awal (dummy data):
-```bash
+# 5. Konfigurasi Database pada file .env
+# DB_DATABASE=pinjam_barang
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# 6. Jalankan Migrasi & Database Seeder
 php artisan migrate --seed
-```
 
-### 7. Buat Symbolic Link Storage (Opsional jika mengunggah gambar)
-```bash
+# 7. Buat Symbolic Link Storage
 php artisan storage:link
+
+# 8. Jalankan Server Development & Asset Build
+php artisan serve
+npm run dev
 ```
 
-### 8. Jalankan Server Lokal
-Jalankan perintah berikut di terminal:
-```bash
-php artisan serve
-```
-Aplikasi dapat diakses melalui browser di: `http://127.0.0.1:8000`
+Aplikasi siap diakses pada browser melalui URL: `http://127.0.0.1:8000`
 
 ---
 
-## 🔑 Akun Demo Default (Demo Credentials)
+## 🔑 Akun Akses Demo (Default Credentials)
 
-Setelah menjalankan `php artisan migrate --seed`, Anda dapat menggunakan akun demo berikut:
+Gunakan akun berikut setelah menjalankan perintah `php artisan migrate --seed`:
 
 | Role | Email | Password | Akses URL |
 | :--- | :--- | :--- | :--- |
-| **Admin** | `admin@nde.co.id` | `password` | `/admin/login` |
-| **Customer** | `budi@example.com` | `password` | `/login` |
+| **Administrator** | `admin@nde.co.id` | `password` | `/admin/login` |
+| **Customer / User** | `budi@example.com` | `password` | `/login` |
+
+---
+
+## 📤 Cara Update Perubahan ke GitHub (Push to GitHub)
+
+Untuk memperbarui tampilan `README.md` dan logo baru di repository GitHub Anda, jalankan perintah git berikut pada terminal:
+
+```bash
+git add README.md public/images/logo.png
+git commit -m "docs: update README with PT Nusantara Digital Express branding & logo"
+git push origin main
+```
 
 ---
 
 ## 📄 Lisensi (License)
 
-Project ini dilisensikan di bawah [MIT License](LICENSE).
-
----
+Dikembangkan untuk **PT Nusantara Digital Express** di bawah lisensi [MIT License](LICENSE).
 
 <p align="center">
-  Dibuat dengan ❤️ untuk sistem manajemen inventaris dan peminjaman barang yang efisien & profesional.
+  <sub>PT Nusantara Digital Express &copy; 2026. All rights reserved.</sub>
 </p>
