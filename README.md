@@ -15,8 +15,8 @@
 </p>
 
 <p align="center">
-  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11"></a>
-  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2+"></a>
+  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 13"></a>
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.3.30-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.3.30"></a>
   <a href="https://mysql.com"><img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License"></a>
   <a href="https://github.com/arvaganteng/WEB-PINJAM-BARANG/stargazers"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
@@ -59,7 +59,7 @@
 
 | Komponen | Teknologi |
 | :--- | :--- |
-| **Backend Framework** | [Laravel 11](https://laravel.com/) (PHP 8.2+) |
+| **Backend Framework** | [Laravel 13](https://laravel.com/) (PHP 8.3.30) |
 | **Database** | MySQL / MariaDB |
 | **Frontend UI** | Blade Templating, Responsive Vanilla CSS & JavaScript |
 | **PDF Generator** | DomPDF (`dompdf/dompdf`) |
@@ -97,7 +97,8 @@ WEB-PINJAM-BARANG/
 ## 🚀 Panduan Instalasi & Jalankan (Getting Started)
 
 ### 1. Prasyarat Sistem
-- PHP `>= 8.2`
+- PHP `8.3.30`
+- Laravel `13.x`
 - Composer `>= 2.x`
 - Node.js & NPM
 - Database Server (MySQL via Laragon / XAMPP)
